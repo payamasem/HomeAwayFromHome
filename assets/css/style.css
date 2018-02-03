@@ -81,3 +81,15 @@ body {
     margin: 25px;
 
   }
+
+div#map.row {
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+ 
+}
+  #map {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
