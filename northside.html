@@ -2,7 +2,7 @@
 <html lang="en">
 <headasdasd>
 
-  <title>Neighborhood: Southside Berkeley</title>
+  <title>Neighborhood: Northside Berkeley</title>
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
  -->  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -54,7 +54,7 @@
 <!-- Second Container -->
 <div class=" container-fluid bg-2 ">
 	<div class="container">
-  <h3 class="margin">Southside Berkeley</h3>
+  <h3 class="margin">Northside Berkeley</h3>
   <br>
   <br>
   <div id="content"></div>
@@ -64,7 +64,7 @@
   
 </div>
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">More about Southside</h3>
+  <h3 class="margin">More about Northside</h3>
   <br>
 	   <div class="col-md-6">
       <div class="row">
@@ -108,7 +108,7 @@ var markers = [];
 
 function initialize(){
   //center is necessary to center map somewhere (in div?)
-  var center = new google.maps.LatLng(37.8673,-122.2526); //lat and long of google coordinates
+  var center = new google.maps.LatLng(37.8751,-122.26018); //lat and long of google coordinates
   map = new google.maps.Map(document.getElementById('map'), {
     center: center,
     zoom: 14
@@ -247,7 +247,7 @@ function clearResults(markers){
 //on status load, will call function "initialize", and target that to browser window
 google.maps.event.addDomListener(window, 'load', initialize);
 
-var queryURL1 = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Southside,_Berkeley,_California"
+var queryURL1 = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Northside,_Berkeley,_California"
   
   var proxy = 'https://cors-anywhere.herokuapp.com/';
   
@@ -258,12 +258,13 @@ var queryURL1 = "https://en.wikipedia.org/w/api.php?format=json&action=query&pro
   
 
           console.log(response);
-          console.log(response.query.pages[14354225].extract);
-          $("#content").html("<p>"+ response.query.pages[14354225
+          console.log(response.query.pages[3234055].extract);
+          $("#content").html("<p>"+ response.query.pages[3234055
 ].extract + "</p>")
       });
 
-var queryURL2 = "http://api.walkscore.com/score?format=json&address=2732+Channing+Way+Berkeley+CA+94704&lat=37.8673&lon=-122.2526&wsapikey=24c9469a038f55c85cbbba8abeadcfcb";
+var queryURL2 = "http://api.walkscore.com/score?format=json&address=1862+Euclid+Ave+Berkeley+CA+94709&lat=37.8751&lon= -122.26018&wsapikey=24c9469a038f55c85cbbba8abeadcfcb";
+  
 
     var proxy = 'https://cors-anywhere.herokuapp.com/';
     $.ajax({
