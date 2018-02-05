@@ -41,8 +41,12 @@
    		var email = childSnapshot.val().email;
    		var feedback = childSnapshot.val().feedback;
    		//full list of feedback from users
-  	 	$("#full-member-list").append("<div class='lists'><span id='name'>" + childSnapshot.val().name 
-  	 		+ "</span><br><span id=feedback>" + childSnapshot.val().feedback + "</span></div>");
+
+      $("#feedback-table > tbody").append("<tr><td>" + name + "</td><td>" + feedback + 
+     "</td></tr>");
+
+  	 	// $("#full-member-list").append("<div class='lists'><span id='name'>" + childSnapshot.val().name 
+  	 	// 	+ "</span><br><span id=feedback>" + childSnapshot.val().feedback + "</span></div>");
   	 //Handle the errors
     }, function(errorObject) {
       console.log("Errors handled: " + errorObject.code);
