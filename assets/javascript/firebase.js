@@ -1,3 +1,4 @@
+
 // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBUKCR3msc7dlhW1oFwnJz2Yimvoz7ub7c",
@@ -15,8 +16,21 @@
   var name = "";
   var email = "";
   var feedback = "";
+  var albanyClickCounter = 0;
+
+  //Once the user clicks the images will save the database into Firebase
+  $("#albany-picture-click").on('click', function(event) {
+
+  	albanyClickCounter++;
+
+  	database.ref().set({
+  		albanyClickCount: albanyClickCounter
+  	});
+
+  });
+
   //Once the user click the submit, it triggers this function
-  $("#submit-button").on('click', function() {
+  $("#submit-button").on('click', function(event) {
   	 //prevent the page from refreshing
   	 event.preventDefault();
 
@@ -35,8 +49,7 @@
   	});
   	//Adding the child for each user's input and show it on the screan
 	database.ref().on("child_added", function(childSnapshot) {
-   		console.log(childSnapshot.val().name);
-
+   		
    		var name = childSnapshot.val().name;
    		var email = childSnapshot.val().email;
    		var feedback = childSnapshot.val().feedback;
