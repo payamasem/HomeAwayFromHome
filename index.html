@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
   
 </head>
 <body>
@@ -34,14 +37,14 @@
          <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEIGHBORHOODS
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
-           <li><a href="albany.html">ALBANY</a></li>
+           <li><a id="albany-picture-click" href="albany.html">ALBANY</a></li>
            <li><a href="#">SOUTHSIDE BERKELEY</a></li>
            <li><a href="#">NORTHSIDE BERKELEY</a></li>
            <li><a href="#">WEST OAKLAND</a></li>
            <li><a href="#">PIEDMONT</a></li>
          </ul>
        </li>
-        <li><a href="about.html">CONTACT</a></li>
+        <li><a href="about.html">FEEDBACK</a></li>
       </ul>
     </div>
   </div>
@@ -141,6 +144,9 @@
 <footer class="container-fluid bg-4 text-center">
   <p>© 2018 Home Away From Home. All Rights Reserved</p> 
 </footer>
+
+<!-- Script -->
+<script src="assets/javascript/firebase.js"></script>
 
 </body>
 </html>
