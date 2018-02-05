@@ -250,7 +250,7 @@ function clearResults(markers){
 //on status load, will call function "initialize", and target that to browser window
 google.maps.event.addDomListener(window, 'load', initialize);
 
-  var queryURL1 = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Northside,_Berkeley,_California"
+  var queryURL1 = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Albany,_California"
   
   var proxy = 'https://cors-anywhere.herokuapp.com/';
   
@@ -261,8 +261,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
   
 
           console.log(response);
-          console.log(response.query.pages[3234055].extract);
-          $("#content").html("<p>"+ response.query.pages[3234055].extract + "</p>")
+          console.log(response.query.pages[60356].extract);
+          $("#content").html("<p>"+ response.query.pages[60356].extract + "</p>")
       });
 
 var queryURL2 = "http://api.walkscore.com/score?format=json&address=999+San+Pablo+Avenue+Albany+CA+94706&lat=37.886944&lon=-122.297778&wsapikey=24c9469a038f55c85cbbba8abeadcfcb";
