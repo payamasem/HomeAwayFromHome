@@ -8,14 +8,16 @@ body {
 
   }
  
+div.container-fluid.bg-2.text-center {
+  padding-top: 0;
+}
 
-  div.col-md-6.slider_left {
+label {
+  float: left;
+}
+  
 
-  }
-
-  form {
-    margin-bottom: 20px;
-  }
+  
 
 .carousel-caption h3 {
   text-transform: uppercase;
