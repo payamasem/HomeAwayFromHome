@@ -108,7 +108,11 @@ $( document ).ready(function() {
 
       var request = {
         location: event.latLng,
+<<<<<<< HEAD
         radius: 8000,
+=======
+        radius: 8047,
+>>>>>>> b61b10c67106fcaff2799841c10e2b5a5eedacee
         types: ['cafe']
       };
 
@@ -143,7 +147,11 @@ $( document ).ready(function() {
     return marker;
   }
 
+<<<<<<< HEAD
  // When you move the map it will clear the markers 
+=======
+  //Added in part 4. this isn't working for me
+>>>>>>> b61b10c67106fcaff2799841c10e2b5a5eedacee
   function clearResults(markers){
     for (var m in markers){
       markers[m].setMap(null);
@@ -159,7 +167,11 @@ $( document ).ready(function() {
   // Ajax call with query URL and herokuapp to prevent CORS issue
   var queryURL1 = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Albany,_California"
     
+<<<<<<< HEAD
   var proxy = 'https://cors-anywhere.herokuapp.com/';
+=======
+    var proxy = 'https://cors-anywhere.herokuapp.com/';
+>>>>>>> b61b10c67106fcaff2799841c10e2b5a5eedacee
     
     $.ajax({
           url: proxy + queryURL1,
@@ -176,7 +188,11 @@ $( document ).ready(function() {
   // Ajax call with query URL and herokuapp to prevent CORS issue
   var queryURL2 = "http://api.walkscore.com/score?format=json&address=999+San+Pablo+Avenue+Albany+CA+94706&lat=37.886944&lon=-122.297778&wsapikey=24c9469a038f55c85cbbba8abeadcfcb";
 
+<<<<<<< HEAD
   var proxy = 'https://cors-anywhere.herokuapp.com/';
+=======
+    var proxy = 'https://cors-anywhere.herokuapp.com/';
+>>>>>>> b61b10c67106fcaff2799841c10e2b5a5eedacee
 
       $.ajax({
         url: proxy + queryURL2,
