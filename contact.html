@@ -10,104 +10,101 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Firebase Reference -->
+  <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
-
-  
 </head>
-<body>
 
+<body>
 <!-- Navbar -->
 <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">HOME AWAY FROM HOME</a>
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li class="dropdown">
-         <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEIGHBORHOODS
-         <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-           <li><a href="albany.html">ALBANY</a></li>
-           <li><a href="#">SOUTHSIDE BERKELEY</a></li>
-           <li><a href="#">NORTHSIDE BERKELEY</a></li>
-           <li><a href="#">WEST OAKLAND</a></li>
-           <li><a href="#">PIEDMONT</a></li>
+   <div class="container">
+      <div class="navbar-header">
+         <a class="navbar-brand" href="index.html">HOME AWAY FROM HOME</a>
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>                        
+         </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEIGHBORHOODS
+               <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><a href="piedmont.html">PIEDMONT</a></li>
+                 <li><a href="westOakland.html">WEST OAKLAND</a></li>
+                 <li><a href="northside.html">NORTHSIDE BERKELEY</a></li>
+                 <li><a href="southside.html">SOUTHSIDE BERKELEY</a></li>
+                 <li><a href="albany.html">ALBANY</a></li>
+               </ul>
+            </li>
+            <li><a href="contact.html">FEEDBACK</a></li>
          </ul>
-       </li>
-        <li><a href="contact.html">FEEDBACK</a></li>
-      </ul>
-    </div>
-  </div>
+      </div>
+
+   </div>
 </nav>
 
 <div class="container-fluid bg-2">
   <div class="container">
-  <h3 class="margin">How are we doing?</h3>
-  <br>
-  <p>We want to hear what you love and what you think we can do better.</p>
-</div>
+    <h3 class="margin">How are we doing?</h3>
+    <br>
+    <p>We want to hear what you love and what you think we can do better.</p>
+  </div>
 </div>
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <div class="container">
-  	<form>
-	  	<div class="form-group">
-		    <label for="name-input">Name</label>
-		    <input type="text" class="form-control form-control-lg" id="name-input" placeholder="Your Name">
-	 	</div>
-	 	<div class="form-group">
-		    <label for="email-input">Email</label>
-		    <input type="email" class="form-control" id="email-input" placeholder="name@email.com">
-	 	</div>
-	  	<div class="form-group">
-        <label for="feedback-input">Feedback</label>
-        <textarea class="form-control" id="feedback-input" rows="3"></textarea>
-		  </div>
-    <button type="submit" class="btn btn-outline-light btn-lg" id="submit-button">Submit</button>
-	</form>
-  </div>
-<!-- Feedback section-->
-  <div class="col-lg-12">
-    <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Other people's feedback</h3>
-      </div>
-      <div class="panel-body" style="text-align: left">
-          <table class="table table-striped" id='feedback-table'>
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Feedback</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-              </tbody>
-            </table>
-      </div>
-    </div>
+   <div class="container">
+     	<form>
+   	  	<div class="form-group">
+      		<label for="name-input">Name</label>
+      		<input type="text" class="form-control form-control-lg" id="name-input" placeholder="Your Name">
+   	 	</div>
+   	 	<div class="form-group">
+      		<label for="email-input">Email</label>
+      		<input type="email" class="form-control" id="email-input" placeholder="name@email.com">
+   	 	</div>
+   	  	<div class="form-group">
+            <label for="feedback-input">Feedback</label>
+            <textarea class="form-control" id="feedback-input" rows="3"></textarea>
+   		</div>
+         <button type="submit" class="btn btn-outline-light btn-lg" id="submit-button">Submit</button>
+   	</form>
    </div>
-  </div>
-</div>
+   <!-- Feedback section-->
+   <div class="col-lg-12">
+      <div class="container">
+         <div class="panel panel-default">
+            <div class="panel-heading">
+               <h4><strong>Other people's feedback</strong></h4>
+            </div>
+            <div class="panel-body" style="text-align: left">
+               <table class="table table-striped" id='feedback-table'>
+                  <thead>
+                     <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Feedback</th>
+                     </tr>
+                  </thead>
+                  <tbody> 
 
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>© 2018 Home Away From Home. All Rights Reserved</p> 
 </footer>
-
 <!-- Script -->
 <script src="assets/javascript/firebase.js"></script>
 </body>
