@@ -1,7 +1,6 @@
-
 // Code included inside $( document ).ready() will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
 $( document ).ready(function() {
- // setting up initial variables
+// setting up initial variables   
   var map;
   var infowindow;
 
@@ -13,10 +12,10 @@ $( document ).ready(function() {
 
   function initialize(){
     //center is necessary to center map somewhere (in div?)
-    var center = new google.maps.LatLng(37.8869,-122.2977); //lat and long of google coordinates
+    var center = new google.maps.LatLng(37.816667, -122.233333); //lat and long of google coordinates
     map = new google.maps.Map(document.getElementById('map'), {
       center: center,
-      zoom: 15
+      zoom: 14
     }); //zoom if you put 1, you look at whole globe
 
     //8000m / 5mile radius around center of map for wine, restaurants, coffee shops, stores, gas stations
@@ -61,29 +60,29 @@ $( document ).ready(function() {
 
 
     var request4 = {
-        location: center,
-        radius: 8000,
-        keyword: 'korean'
-      };
+      location: center,
+      radius: 8000,
+      keyword: 'korean'
+    };
 
-      infowindow = new google.maps.InfoWindow();
+    infowindow = new google.maps.InfoWindow();
 
-      var service4 = new google.maps.places.PlacesService(map);
+    var service4 = new google.maps.places.PlacesService(map);
 
-      service4.nearbySearch(request3,callback);
+    service4.nearbySearch(request3,callback);
 
 
     var request5 = {
-        location: center,
-        radius: 8000,
-        types: ['store']
-      };
+      location: center,
+      radius: 8000,
+      types: ['store']
+    };
 
-      infowindow = new google.maps.InfoWindow();
+    infowindow = new google.maps.InfoWindow();
 
-      var service5 = new google.maps.places.PlacesService(map);
+    var service5 = new google.maps.places.PlacesService(map);
 
-      service5.nearbySearch(request3,callback);
+    service5.nearbySearch(request3,callback);
 
 
 
@@ -111,15 +110,13 @@ $( document ).ready(function() {
         radius: 8000,
         types: ['cafe']
       };
-
       service.nearbySearch(request, callback);
-
     });
 
   }
 
-  //ensures we get back good results and that no error connecting to server
-  //gets all the results into array, and gives them a marker
+//ensures we get back good results and that no error connecting to server
+//gets all the results into array, and gives them a marker
   function callback(results, status){
     if(status == google.maps.places.PlacesServiceStatus.OK){
       for(var i = 0; i < results.length; i++){
@@ -127,6 +124,7 @@ $( document ).ready(function() {
       }
     }
   }
+
   // ensures we have red markers on places we are looking for
   function createMarker(place){
     var placeLoc = place.geometry.location;
@@ -143,7 +141,7 @@ $( document ).ready(function() {
     return marker;
   }
 
- // When you move the map it will clear the markers 
+   // When you move the map it will clear the markers
   function clearResults(markers){
     for (var m in markers){
       markers[m].setMap(null);
@@ -157,7 +155,7 @@ $( document ).ready(function() {
 
   // calling wikipedia Api
   // Ajax call with query URL and herokuapp to prevent CORS issue
-  var queryURL1 = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Albany,_California"
+  var queryURL1 = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Piedmont,_California"
     
   var proxy = 'https://cors-anywhere.herokuapp.com/';
     
@@ -168,16 +166,16 @@ $( document ).ready(function() {
     
 
             console.log(response);
-            console.log(response.query.pages[60356].extract);
-            $("#content").html("<p>"+ response.query.pages[60356].extract + "</p>")
+            console.log(response.query.pages[107339].extract);
+            $("#content").html("<p>"+ response.query.pages[107339].extract + "</p>")
         });
+
 
   // calling walkscore Api
   // Ajax call with query URL and herokuapp to prevent CORS issue
-  var queryURL2 = "http://api.walkscore.com/score?format=json&address=999+San+Pablo+Avenue+Albany+CA+94706&lat=37.886944&lon=-122.297778&wsapikey=24c9469a038f55c85cbbba8abeadcfcb";
-
+  var queryURL2 = "http://api.walkscore.com/score?format=json&address=1189-1181+Harvard+Rd+Piedmont+CA+94610&lat=37.816667&lon=-122.233333&wsapikey=24c9469a038f55c85cbbba8abeadcfcb";
+    
   var proxy = 'https://cors-anywhere.herokuapp.com/';
-
       $.ajax({
         url: proxy + queryURL2,
         method: 'GET'
@@ -192,3 +190,8 @@ $( document ).ready(function() {
       });
 
 });
+
+
+    
+
+  
