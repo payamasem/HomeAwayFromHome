@@ -13,4 +13,4 @@ UCB Coding Bootcamp Project #1
 
 <strong>Technologies Used:</strong> Image Mapping and Photo Carousel
 
-Libraries Used: jQuery, Bootstrap, Firebase
+Libraries Used:[jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/), [Firebase](https://firebase.google.com/).
