@@ -4,7 +4,10 @@
 
 ### Purpose:
 
-### How it works:
+### How to use it:
+1. Initially click on a neighborhood primarily based on map location and average rent ()
+2. Be given specific data on that neighborhood from Wikipedia API, Walk Score API, and Google Places API
+3. Have the option to directly search for properties through Zillow widget or navigate to the feedback page and give us some criticism. 
 
 ### LIVE SITE:
 <a href="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif"><img src="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif" title="imageCapture"/></a>
