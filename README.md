@@ -2,4 +2,4 @@
 UCB Coding Bootcamp Project #1 
 
 
-<iframe src="https://giphy.com/embed/l4pTl5jJGgclxPmwg" width="480" height="244" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/l4pTl5jJGgclxPmwg">via GIPHY</a></p>
+<a href="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif"><img src="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif" title="imageCapture"/></a>
