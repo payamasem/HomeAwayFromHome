@@ -2,11 +2,4 @@
 UCB Coding Bootcamp Project #1 
 
 
-
-1. how to add images?
-	![alt text](http://url/to/img.png)
-
-	I think you can link directly to the raw version of an image if it's stored in your repository. i.e.
-	![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
-
-2. 
+<div style="width:100%;height:0;padding-bottom:51%;position:relative;"><iframe src="https://giphy.com/embed/l4pTl5jJGgclxPmwg" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/l4pTl5jJGgclxPmwg">via GIPHY</a></p>
