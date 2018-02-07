@@ -1,4 +1,4 @@
-# HomeAwayFromHome ReadME
+# HomeAwayFromHome
 
 **Link to deployed site: [/payamasem.github.io/HomeAwayFromHome/](payamasem.github.io/HomeAwayFromHome/)**
 
