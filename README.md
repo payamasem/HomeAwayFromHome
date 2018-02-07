@@ -3,6 +3,7 @@ UCB Coding Bootcamp Project #1
 
 
 <strong>LIVE SITE:</strong>
+
 <a href="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif"><img src="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif" title="imageCapture"/></a>
 
 <a href="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif"><img src="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif" title="imageCapture"/></a>
@@ -10,6 +11,6 @@ UCB Coding Bootcamp Project #1
 
 <strong>How to use it:</strong> Home away from home uses css, bootstrap, and javascript on the front end. For the back end Home away from home uses javascript and API’s like Wikipedia and Google Places.
 
-Technologies Used: Image Mapping and Photo Carousel
+<strong>Technologies Used:</strong> Image Mapping and Photo Carousel
 
 Libraries Used: jQuery, Bootstrap, Firebase
