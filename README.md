@@ -1,10 +1,10 @@
-# HomeAwayFromHome
+# HomeAwayFromHome ReadME
 
 **Purpose:**
 
 **How it works:**
 
-##LIVE SITE:
+## LIVE SITE:
 
 <a href="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif"><img src="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif" title="imageCapture"/></a>
 
