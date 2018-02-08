@@ -16,9 +16,13 @@ We are a group of junior developers currently enrolled in a coding bootcamp offe
 <a href="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif"><img src="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif" title="imageCapture"/></a>
 
 
-**How it works:** 
+### How it works:
 Home Away From Home is a totally free website! Users can get information without log in or register any account. After users click the areas that they want to know, it will link them to another main page of info about this specific neighborhood. That will give the ideal of how the neighborhoods do and what things are around, such as the rents, walk score, restaurants, coffee places and so on. After they use the website, they also can give any feedback from the Feedback page.
 Home away from home uses css, bootstrap, and javascript on the front end. For the back end Home away from home uses javascript and API’s like Wikipedia and Google Places.
 
 
-**Libraries used:** [jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/), [Firebase](https://firebase.google.com/).
+### APIs
+ [Walk score](https://www.walkscore.com/professional/walk-score-apis.php), [Zillow](https://www.zillow.com/howto/api/GetSearchResults.htm), [Wikipedia](https://www.mediawiki.org/wiki/API:Search_and_discovery), [Google Places](https://developers.google.com/places/supported_types#table1)
+ 
+### Libraries used:
+[jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/), [Firebase](https://firebase.google.com/).
