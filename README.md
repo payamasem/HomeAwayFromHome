@@ -1,6 +1,6 @@
 # HomeAwayFromHome
 
-**Link to deployed site: [/payamasem.github.io/HomeAwayFromHome/](payamasem.github.io/HomeAwayFromHome/)**
+**Link to deployed site: [https://payamasem.github.io/HomeAwayFromHome/](https://payamasem.github.io/HomeAwayFromHome/)**
 
 ### Purpose:
 We are a group of junior developers currently enrolled in a coding bootcamp offered through UC Berkeley extension. Since all of our creators are from very different cultures, we wanted to design an app that allows every individual to feel close to home even when they’re miles and miles away. We provide detailed information about neighborhoods (including but not limited to: average rent, walk scores, home listings, etc.) Our hope is to give every individual the opportunity to access important information that is necessary to consider when making a new move. We are currently based in the Bay Area (more specifically Berkeley), but we plan to expand across neighborhoods throughout the country. We have made Home Away from Home a totally free website --- users can get information without logging in or registering an account. 
@@ -24,7 +24,7 @@ Home Away From Home uses CSS styles, Bootstrap, JavaScript, and jQuery on the fr
 
 
 ### APIs used: 
-[Walk score](https://www.walkscore.com/professional/walk-score-apis.php), [Wikipedia](https://www.mediawiki.org/wiki/API:Search_and_discovery), [Google Places](https://developers.google.com/places/supported_types#table1)
+[WalkScore](https://www.walkscore.com/professional/walk-score-apis.php), [Wikipedia](https://www.mediawiki.org/wiki/API:Search_and_discovery), [Google Places](https://developers.google.com/places/supported_types#table1)
 
 ### Widgets used:
 [Zillow](https://www.zillow.com/howto/api/GetSearchResults.htm)
