@@ -17,9 +17,9 @@ Since all of the developers on our team are from very different cultures, we dec
 
 
 ### LIVE SITE:
-<a href="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif"><img src="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif" title="imageCapture"/></a>
+<a href="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif"><img src="https://media.giphy.com/media/xUOwGjCzScv4vdRUuk/giphy.gif" title="Live Site Part 1"/></a>
 
-<a href="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif"><img src="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif" title="imageCapture"/></a>
+<a href="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif"><img src="https://media.giphy.com/media/l4pTl5jJGgclxPmwg/giphy.gif" title="Live Site Part 2"/></a>
 
 
 ### How it works:
